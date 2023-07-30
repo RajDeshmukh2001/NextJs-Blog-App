@@ -3,7 +3,7 @@ import styles from './post.module.css';
 import { format } from 'date-fns';
 
 const getData = async (id) => {
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+  const res = await fetch(`/api/posts/${id}`, {
     cache: "no-store",
   });
 

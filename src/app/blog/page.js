@@ -3,7 +3,7 @@ import styles from './blog.module.css';
 import Link from 'next/link';
 
 const getData = async () => {
-  const res = await fetch(`http://localhost:3000/api/posts`, {
+  const res = await fetch(`/api/posts`, {
     cache: "no-store",
   });
 
