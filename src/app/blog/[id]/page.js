@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import styles from './post.module.css';
 import { format } from 'date-fns';
