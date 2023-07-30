@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input {
+    padding: 15px;
+    background: transparent;
+    color: #53c28b;
+    border: 1px solid #bbb;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input:is(:focus) {
+    border: 1px solid #53c28b;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 15px 20px;
+    background-color: #53c28b;
+    color: #fff;
+    border: 1px solid #53c28b;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #111;
+    border: 1px solid #53c28b;
+}
+
+.login {
+    color: #53c28b;
+}
+
+.login:hover {
+    text-decoration: underline #53c28b;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.span {
+    width: 120px;
+    height: 0.8px;
+    background-color: #53c28b;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .form {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .input {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    
+    .login {
+        color: #53c28b;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+    
+    .or {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .span {
+        width: 120px;
+        height: 0.8px;
+        background-color: #53c28b;
+    }
+}

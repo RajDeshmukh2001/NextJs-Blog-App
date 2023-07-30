@@ -1,0 +1,59 @@
+.container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all ease;
+}
+
+.hide {
+    display: none;
+}
+
+.modal {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    width: 40%;
+    padding: 12px 0;
+    background: #53c28b;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.message,
+.close {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.close {
+    color: rgb(188, 0, 0);
+    cursor: pointer;
+    transition: 1s all ease;
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        height: 60px;
+        position: relative;
+    }
+
+
+    .modal {
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .message,
+    .close {
+        font-size: 12px;
+        font-weight: 400;
+    }
+}

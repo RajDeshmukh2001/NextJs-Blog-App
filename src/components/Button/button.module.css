@@ -1,0 +1,24 @@
+.btn {
+    font-size: 15px;
+    padding: 15px 20px;
+    background-color: #53c28b;
+    color: #fff;
+    border: 1px solid #53c28b;
+    border-radius: 5px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #111;
+    border: 1px solid #53c28b;
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    
+}

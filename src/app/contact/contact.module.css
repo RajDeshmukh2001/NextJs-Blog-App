@@ -1,0 +1,98 @@
+.title {
+    font-size: 28px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.imgBox {
+    flex: 1;
+    height: 400px;
+    position: relative;
+}
+
+.img {
+    animation: contact 3s ease 0s infinite normal none;
+}
+
+.form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input, .textarea {
+    padding: 15px;
+    background: transparent;
+    /* color: #222; */
+    color: #53c28b;
+    border: 1px solid #bbb;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input:is(:focus), .textarea:is(:focus) {
+    border: 1px solid #53c28b;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 15px 20px;
+    background-color: #53c28b;
+    color: #fff;
+    border: 1px solid #53c28b;
+    border-radius: 5px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #111;
+    border: 1px solid #53c28b;
+}
+
+@keyframes contact {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .title {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .content{
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .imgBox {
+        display: none;
+    }
+
+    .input, .textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}

@@ -1,0 +1,132 @@
+.container {
+    display: flex;
+    gap: 100px;
+}
+
+.posts {
+    flex: 1;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0px;
+}
+
+.imgBox {
+    width: 200px;
+    height: 100px;
+}
+
+.img {
+    object-fit: cover;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.icon:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+.form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input,
+.textarea {
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #bbb;
+    font-size: 16px;
+    font-weight: 500;
+    color: #53c28b;
+}
+
+.input:is(:focus), .textarea:is(:focus) {
+    border: 1px solid #53c28b;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 15px 20px;
+    background-color: #53c28b;
+    color: #fff;
+    border: 1px solid #53c28b;
+    border-radius: 5px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #111;
+    border: 1px solid #53c28b;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    
+    .posts {
+        flex: 1;
+    }
+    
+    .post {
+        gap: 12px;
+        margin: 20px 0px;
+    }
+    
+    .imgBox {
+        width: 100px;
+        height: 50px;
+    }
+    
+    .img {
+        width: 100px !important;
+        height: 50px !important;
+        object-fit: cover;
+    }
+
+    .heading {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .title {
+        font-size: 12px;
+    }
+
+    .icon {
+        width: 18px !important;
+        height: 18px !important;
+    }
+    
+    .input,
+    .textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
