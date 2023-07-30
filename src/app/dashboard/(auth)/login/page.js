@@ -37,7 +37,7 @@ const Login = () => {
           <input type="password" placeholder="Password" className={styles.input} required />
           <button className={styles.btn}>Login</button>
         </form>
-        <p className={styles.text}>Don't have an account? <Link href="/dashboard/register" className={styles.login}>Register</Link></p>
+        <p className={styles.text}>Don&apos;t have an account? <Link href="/dashboard/register" className={styles.login}>Register</Link></p>
         <div className={styles.or}>
           <span className={styles.span}></span>
           <p>OR</p>
