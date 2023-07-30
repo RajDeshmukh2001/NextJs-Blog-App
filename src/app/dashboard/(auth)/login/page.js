@@ -4,17 +4,13 @@ import { signIn, useSession } from 'next-auth/react';
 import styles from '../register/register.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
-import Modal from '@/components/Modal/Modal';
 
 const Login = () => {
   const session = useSession();
   const router = useRouter();
-  const [stat, setStat] = useState(null);
 
   if (session.status === 'authenticated') {
     router?.push('/dashboard');
-    setStat('Success');
   }
 
 
@@ -29,7 +25,6 @@ const Login = () => {
 
   return (
     <>
-      {stat === 'Success' && <Modal message="Success! Logged in" />}
       <div className={styles.container}>
         <h2 className={styles.title}>Sign In</h2>
         <form className={styles.form} onSubmit={handleSubmit}>
