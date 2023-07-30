@@ -1,11 +1,12 @@
-'use client';
-
+import { headers } from "next/headers";
 import Image from 'next/image';
 import styles from './post.module.css';
 import { format } from 'date-fns';
 
 const getData = async (id) => {
-  const res = await fetch(`/api/posts/${id}`, {
+  const host = headers().get("host");
+  const protocal = process?.env.NODE_ENV === "development" ? "http" : "https";
+  const res = await fetch(`${protocal}://${host}/api/posts/${id}`, {
     cache: "no-store",
   });
 

@@ -1,11 +1,12 @@
-'use client';
-
 import Image from 'next/image';
 import styles from './blog.module.css';
 import Link from 'next/link';
+import { headers } from "next/headers";
 
 const getData = async () => {
-  const res = await fetch(`/api/posts`, {
+  const host = headers().get("host");
+  const protocal = process?.env.NODE_ENV === "development" ? "http" : "https";
+  const res = await fetch(`${protocal}://${host}/api/posts`, {
     cache: "no-store",
   });
 
